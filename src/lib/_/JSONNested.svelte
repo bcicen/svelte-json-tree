@@ -48,9 +48,11 @@
     {#if root}
       <JSONArrow {expanded} />
     {/if}
+    {#if !$expanded}
     <Summary>
       <slot name="preview" />
     </Summary>
+    {/if}
   </span>
 
   {#if $expanded}
